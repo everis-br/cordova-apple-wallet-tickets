@@ -1,0 +1,17 @@
+{
+  "name": "cordova-apple-wallet-tickets",
+  "version": "0.0.1",
+  "description": "Plugin to add tickets on Apple Wallet",
+  "cordova": {
+    "id": "cordova-apple-wallet-tickets",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Leonardo Benedeti",
+  "license": "ISC"
+}

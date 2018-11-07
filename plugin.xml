@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-apple-wallet-tickets" version="0.0.1" 
+        xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AppleWalletTickets</name>
+    <description>Plugin to add tickets on Apple Wallet</description>
+    <author>Leonardo Benedeti</author>
+    <keywords>Apple,iOS,Wallet,Tickets,Base64</keywords>
+    <license>Apache 2.0</license>
+    <js-module name="AppleWalletTickets" src="www/AppleWalletTickets.js">
+        <clobbers target="cordova.plugins.AppleWalletTickets" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="AppleWalletTickets">
+                <param name="ios-package" value="AppleWalletTickets" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/AppleWalletTickets.m" />
+        <framework src="PassKit.framework" />
+    </platform>
+</plugin>
